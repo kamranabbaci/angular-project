@@ -1,0 +1,28 @@
+<div class="row m-4">
+    @for (course of courses; track course.id) {
+    <div class="col-lg-4 mb-5">
+        <div class="card m-2 box">
+            @if (course.image) {
+            <img [src]="course.image" class="card-img-top" alt="Course Image">
+            }
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{ course.title }}
+                </h5>
+                <p class="card-text">
+                    {{ course.description }}
+                </p>
+            </div>
+            @if (showDelete) {
+            <button class="btn delete-btn" (click)="deleteCourse(course)">
+                <i class="bi bi-trash-fill"></i>
+            </button>
+            }
+        </div>
+    </div>
+    } @empty {
+    <div align="center">
+        No course added yet
+    </div>
+    }
+</div>
