@@ -3,7 +3,7 @@
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.11.
 
 ## Running Project 
-To run this project please visit https://kamranabbaci.github.io/angular-project/about
+To run this project please visit https://kamranabbaci.github.io/angular-project
 
 ## Development server
 
